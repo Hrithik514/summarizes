@@ -25,6 +25,6 @@ def luhn_summary():
     result = ' '.join(summary_list)
     data={'summarize':result}
     #json_dump1=json_dump(data)
-    return data 
+    return jsonify(data) 
 if __name__ == "__main__":
     app.run(debug=True)
